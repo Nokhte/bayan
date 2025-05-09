@@ -1,0 +1,12 @@
+tensorflow==2.19.0
+numpy==1.26.4
+keras==3.5.0
+tensorboard==2.19.0
+pandas==2.0.3
+librosa==0.11.0
+tensorflow_addons==0.21.0
+matplotlib
+scipy
+pytest
+tensorflow-metal
+webrtcvad

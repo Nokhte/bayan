@@ -1,0 +1,15 @@
+__pycache__
+venv/
+**.pt
+audio_cache/
+.venv/
+variables/
+**.pb
+**.tflite
+data/
+.pytest_cache/
+logs/
+debug_plots/
+models/
+**.h5
+**.ckpt.**
