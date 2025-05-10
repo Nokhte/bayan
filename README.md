@@ -41,22 +41,6 @@ bayan/
 └── LICENSE          # Project license
 ```
 
-## Dependencies
-
-The project relies on the following main dependencies:
-- TensorFlow (2.19.0)
-- NumPy (1.26.4)
-- Keras (3.5.0)
-- TensorBoard (2.19.0)
-- Pandas (2.0.3)
-- Librosa (0.11.0)
-- TensorFlow Addons (0.21.0)
-- Matplotlib
-- SciPy
-- PyTest
-- TensorFlow-Metal (for Apple Silicon support)
-- WebRTC VAD
-
 ## Usage
 
 [Add specific usage instructions here]

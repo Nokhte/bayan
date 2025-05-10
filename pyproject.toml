@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bayan"
+version = "0.1.0"
+description = "A collection of voice models made for the edge"
+readme = "README.md"
+requires-python = ">=3.10"
+
+dependencies = [
+    "tensorflow==2.19.0",
+    "numpy==1.26.4",
+    "keras==3.5.0",
+    "tensorboard==2.19.0",
+    "pandas==2.0.3",
+    "librosa==0.11.0",
+    "tensorflow-addons==0.21.0",
+    "matplotlib==3.10.1",
+    "scipy==1.15.2",
+    "pytest==8.3.5",
+    "tensorflow-metal==1.2.0",
+    "webrtcvad==2.0.10",
+    "python-dotenv==1.1.0",
+    "kagglehub==0.3.12",
+]
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]

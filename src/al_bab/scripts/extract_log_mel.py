@@ -1,6 +1,5 @@
 import numpy as np
 import librosa
-import tensorflow as tf
 
 
 def extract_log_mel_spectrogram(audio, sample_rate=16000, n_mels=40, n_fft=400, hop_length=160, duration_sec=1.0):

@@ -1,8 +1,8 @@
 import tensorflow as tf
 import numpy as np
 import os
-from scripts.mix_and_label import generate_labeled_example
-from scripts.extract_log_mel import extract_log_mel_spectrogram
+from al_bab.scripts.mix_and_label import generate_labeled_example
+from al_bab.scripts.extract_log_mel import extract_log_mel_spectrogram
 
 
 def create_tf_dataset(speech_dir, noise_dir, batch_size=32, seed=None, snr_range=(5, 15), num_examples=16000):
