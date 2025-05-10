@@ -5,8 +5,9 @@ tensorboard==2.19.0
 pandas==2.0.3
 librosa==0.11.0
 tensorflow_addons==0.21.0
-matplotlib
-scipy
-pytest
-tensorflow-metal
-webrtcvad
+matplotlib==3.10.1
+scipy==1.15.2
+pytest==8.3.5
+tensorflow-metal==1.2.0
+webrtcvad==2.0.10
+python-dotenv==1.1.0

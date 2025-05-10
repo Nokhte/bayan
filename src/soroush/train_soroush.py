@@ -6,7 +6,7 @@ import tensorflow_addons as tfa
 from keras import Model
 from keras import layers as L
 
-from create_audio_tf_records import PersonIdAudio
+from create_audio_tf_records import AudioTarReader, PersonIdAudio
 
 
 # make compatible with tensorflow 2.4

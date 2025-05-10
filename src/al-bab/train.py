@@ -138,9 +138,10 @@ def main():
         speech_dir=val_speech_dir,
         noise_dir=val_noise_dir,
         batch_size=args.batch_size,
-        seed=args.seed + 1,  # Different seed for validation
+        seed=args.seed + 1,
         snr_range=snr_range,
         num_examples=val_examples_needed,
+
 
     )
 

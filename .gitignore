@@ -6,10 +6,11 @@ audio_cache/
 variables/
 **.pb
 **.tflite
-data/
+clean_speech/
+noise/
 .pytest_cache/
 logs/
 debug_plots/
 models/
-**.h5
-**.ckpt.**
+**/.DS_Store
+pretrained/

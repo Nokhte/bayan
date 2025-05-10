@@ -2,17 +2,17 @@ import tensorflow as tf
 import os
 import train_soroush
 
-if os.path.isfile('soroush-model/saved_model.pb'):
+if os.path.isfile('pretrained/saved_model.pb'):
     # git push problem
-    model = tf.keras.models.load_model('soroush-model')
+    model = tf.keras.models.load_model('pretrained')
 else:
     model = train_soroush.BaseSpeechEmbeddingModel()
-    model.load_weights('soroush-model/cp-0110.ckpt')
+    model.load_weights('pretrained/cp-0110.ckpt')
     # after "save", you can use load_model without problems
-    model.save('soroush-model')
+    model.save('pretrained')
 
 # Load the SavedModel
-saved_model = tf.saved_model.load("soroush-model")
+saved_model = tf.saved_model.load("pretrained")
 
 # Get the serving signature
 infer = saved_model.signatures["serving_default"]

@@ -8,7 +8,7 @@ This project appears to be a machine learning system for audio processing, utili
 
 ## Prerequisites
 
-- Python 3.x
+- Python 3.10
 - pip (Python package installer)
 
 ## Installation
