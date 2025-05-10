@@ -47,8 +47,7 @@ bayan/
 │   ├── soroush/     # Soroush module
 │   └── al_bab/      # Voice Activity Detection (VAD) 
 │       ├── models/  # VAD model implementations
-│       ├── utils/   # Audio processing utilities
-│       ├── config/  # Configuration files
+│       └── utils/   # Audio processing utilities
 │
 ├── test/ # Unit Tests
 │
