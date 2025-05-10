@@ -25,6 +25,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install -e .
       - name: Get Test Data
-        run: python src/al_bab/test_loader.py
+        run: python src/al_bab/data/test_loader.py
       - name: Run unit tests
         run: pytest tests/
