@@ -20,16 +20,15 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.10.6"
-      - name: Set up Kaggle API token
+      - name: Set up Kaggle credentials
+        env:
+          KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
+          KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
         run: |
-          mkdir -p ~/.kaggle
-          echo "${{ secrets.KAGGLE_JSON }}" > ~/.kaggle/kaggle.json
-          chmod 600 ~/.kaggle/kaggle.json
+          pip install kaggle
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install -e .
-      - name: Create models from checkpoint files
-        run: python src/al_bab/test_loader.py
       - name: Run unit tests
         run: pytest tests/
