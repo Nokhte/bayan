@@ -11,9 +11,6 @@ on:
 jobs:
   run-tests:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: packages/models
     steps:
       - uses: actions/checkout@v4
       - name: Set up Python 3.10.6
