@@ -1,18 +1,19 @@
 # Bayan
 
-A machine learning project focused on audio processing and analysis, built with TensorFlow and related libraries.
+A family of voice-driven models for audio processing, built with TensorFlow and related libraries. Developed for use within the Nokhte ecosystem, including the Nokhte mobile app.
 
 ## Overview
 
-This project appears to be a machine learning system for audio processing, utilizing TensorFlow and various audio processing libraries. The project consists of two main components:
+Bayan (بیان) means "speech" or "expression" in Persian, reflecting the project's focus on understanding and interpreting human voice.
 
-- **Soroush Module**: A voice activity detection and speaker identification system
-- **Al-Bab Module**: A comprehensive voice activity detection (VAD) system that includes:
-  - Real-time audio stream processing
-  - Multiple VAD model implementations
-  - Audio preprocessing and feature extraction
-  - Integration with various audio input sources
-  - Performance optimization for different hardware configurations
+This repository houses a collection of machine learning systems for real-time audio analysis and voice understanding. It is composed of two main modules:
+
+Soroush (سروش): A voice activity detection (VAD) and speaker identification system. In Persian mythology, Soroush is an angel of communication—aptly named for a module that listens and distinguishes who is speaking.
+
+Al-Bab (الباب): A modular, high-performance VAD engine. Al-Bab, meaning "the gate" in Arabic, symbolizes its function as the gateway to downstream voice intelligence by deciding when speech occurs.
+
+Together, these models form the audio intelligence layer for the Nokhte mobile app, enabling voice-triggered interaction and context-aware voice features. While tightly integrated with the app, the models are modular and can be reused across other systems.
+
 
 ## Prerequisites
 
@@ -102,29 +103,6 @@ from src.soroush.data.downloader import download_data
 # Download data from a specific source
 download_data(source="your_source", output_dir="path/to/output")
 ```
-
-### Data Sources
-
-The system supports multiple data sources:
-- Local audio files
-- Remote audio repositories
-- Streaming audio sources
-
-### Data Processing
-
-After downloading, data can be processed using the built-in processing pipeline:
-```python
-from src.soroush.data.processor import process_audio
-
-# Process downloaded audio files
-process_audio(input_dir="path/to/input", output_dir="path/to/output")
-```
-
-### Data Storage
-
-- Downloaded data is stored in the `data/` directory by default
-- Processed data is organized in subdirectories based on the source and processing parameters
-- The system maintains metadata about downloaded and processed files
 
 ## Development
 
