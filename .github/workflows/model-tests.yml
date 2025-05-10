@@ -1,5 +1,6 @@
 name: Models Unit Tests
 on:
+  workflow_dispatch:
   push:
     branches:
       - main
@@ -22,7 +23,7 @@ jobs:
       - name: Set up Kaggle API token
         run: |
           mkdir -p ~/.kaggle
-          echo "${{ secrets.KAGGLE_API_TOKEN }}" > ~/.kaggle/kaggle.json
+          echo "${{ secrets.KAGGLE_JSON }}" > ~/.kaggle/kaggle.json
           chmod 600 ~/.kaggle/kaggle.json
       - name: Install dependencies
         run: |
