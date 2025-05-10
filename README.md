@@ -36,7 +36,7 @@ source .venv/bin/activate  # On Windows, use: venv\Scripts\activate
 
 3. Install dependencies:
 ```bash
-pip install -e ".[macos || other]"
+pip install -e . # pip install -e ".[macos]" if running mac-os
 ```
 
 ## Project Structure
